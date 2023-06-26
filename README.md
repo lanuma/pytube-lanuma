@@ -1,3 +1,6 @@
+### This is a pytube fork created purpose
+This fork was created for fast fixing some bug. This package will used for my current project. Bug and update will referenced from source repository. If you decide to use this package, please know this package know their could be issues with the code not working properly going forward. But i still open contribution for package development.
+
 <div align="center">
   <p>
     <a href="#"><img src="https://assets.nickficano.com/gh-pytube.min.svg" width="456" height="143" alt="pytube logo" /></a>

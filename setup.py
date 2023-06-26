@@ -14,22 +14,22 @@ with open(os.path.join(here, "pytube", "version.py")) as fp:
     exec(fp.read())
 
 setup(
-    name="pytube",
+    name="pytube-lanuma",
     version=__version__,  # noqa: F821
-    author="Ronnie Ghose, Taylor Fox Dahlin, Nick Ficano",
-    author_email="hey@pytube.io",
+    author="Angga Lanuma",
+    author_email="lanuma.angga@gmail.com",
     packages=["pytube", "pytube.contrib"],
     package_data={"": ["LICENSE"],},
-    url="https://github.com/pytube/pytube",
-    license="The Unlicense (Unlicense)",
+    url="https://github.com/lanuma/pytube-lanuma",
+    license="MIT",
     entry_points={
         "console_scripts": [
-            "pytube = pytube.cli:main"],},
+            "pytube_lanuma = pytube.cli:main"],},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: The Unlicense (Unlicense)",
+        "License :: OSI Approved :: MIT",
         "Natural Language :: English",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3.7",
@@ -51,7 +51,7 @@ setup(
     zip_safe=True,
     python_requires=">=3.7",
     project_urls={
-        "Bug Reports": "https://github.com/pytube/pytube/issues",
+        "Bug Reports": "https://github.com/lanuma/pytube-lanuma/issues",
         "Read the Docs": "https://pytube.io",
     },
     keywords=["youtube", "download", "video", "stream",],
