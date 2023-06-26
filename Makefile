@@ -2,7 +2,7 @@ dev:
 	pipenv install --dev
 
 pipenv:
-	pip install pipenv
+	pip3 install pipenv
 	pipenv install --dev
 
 deploy-patch: clean requirements bumpversion-patch upload clean
