@@ -12,7 +12,7 @@ deploy-minor: clean requirements bumpversion-minor upload clean
 deploy-major: clean requirements bumpversion-major upload clean
 
 requirements:
-	pipenv_to_requirements
+	pipenv requirements > requirements.txt
 
 bumpversion-patch:
 	bumpversion patch
