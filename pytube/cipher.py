@@ -198,15 +198,16 @@ def get_transform_plan(js: str) -> List[str]:
 
 
 def get_transform_object(js: str, var: str) -> List[str]:
+    """Extract the "transform object"""
     pattern = r"var %s={(.*?)};" % re.escape(var)
     logger.debug("getting transform object")
     regex = re.compile(pattern, flags=re.DOTALL)
     transform_match = regex.search(js)
-
     if not transform_match:
-        # i commented out the line raising the error
-        # raise RegexMatchError(caller="get_transform_object", pattern=pattern)
-        return []  # Return an empty list if no match is found
+        # This line raises the RegexMatchError exception
+        #raise RegexMatchError(caller="get_transform_object", pattern=pattern)
+        logger.error(f"No match found for pattern: {pattern}")
+        return []
 
     return transform_match.group(1).replace("\n", " ").split(", ")
 
